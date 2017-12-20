@@ -11,8 +11,6 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
-//
-
 // render to page
 render(<App />, document.getElementById('root'));
 registerServiceWorker();

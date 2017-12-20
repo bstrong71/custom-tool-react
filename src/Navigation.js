@@ -47,7 +47,7 @@ export default class Navigation extends Component {
         {/* start nav, set background to dark and text to match dark */}
         <Navbar color="dark" dark expand="md">
           {/* NavbarBrand is equal to regular bootstrap navbar brand */}
-          <NavbarBrand href="/">Custom Tool</NavbarBrand>
+          <NavbarBrand tag={NavLink} to={"/"}>Custom Tool</NavbarBrand>
           {/* onClick, find and execute the function toggle if it is bound */}
           <NavbarToggler onClick={this.toggle} />
           {/* expands to show content if var isOpen is true */}
@@ -55,13 +55,13 @@ export default class Navigation extends Component {
             <Nav className="mr-auto" navbar>
               {/* to={} is direct react link to another view */}
               <NavItem>
-                <NavLink to={"/all/"}>List All</NavLink>
+                <NavLink className="nav-link nav-item" to={"/all/"}>List All</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to={"/lathes/"}>List Lathes</NavLink>
+                <NavLink className="nav-link nav-item" to={"/lathes/"}>List Lathes</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to={"/mills/"}>List Mills</NavLink>
+                <NavLink className="nav-link nav-item" to={"/mills/"}>List Mills</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
